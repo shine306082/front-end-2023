@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Bruno Ace SC", cursive;
+  font-family: "Castoro", serif sans-serif;
+}
+
+.header {
+  background-color: black;
+}
+.header .container {
+  width: 1296px;
+  margin: 0 auto;
+  padding: 40px 0px 0px;
+}
+.header .container ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header .container ul a {
+  color: white;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.banner {
+  background-color: black;
+}
+.banner .container {
+  width: 1296px;
+  margin: 0 auto;
+  padding: 72px 0px;
+  display: flex;
+  align-items: center;
+}
+.banner .container h2 {
+  color: white;
+  font-size: 64px;
+  line-height: 96px;
+}
+
+.b-text {
+  margin-left: 24px;
+}
+.b-text .b-bottom {
+  text-align: end;
+}
+.b-text .b-bottom p {
+  color: #00FFA3;
+  font-size: 128px;
+  line-height: 192px;
+}
+.b-text .b-bottom .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: white;
+  border-radius: 32px;
+}
+.b-text .b-bottom .btn a {
+  color: black;
+  text-decoration: none;
+  margin-right: 4px;
+}
+.b-text .b-bottom .btn img {
+  vertical-align: middle;
+}
+
+.introduction {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+  background-size: cover;
+}
+.introduction .container {
+  width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  padding: 160px 0px;
+}
+.introduction .container .i-text {
+  color: white;
+  margin-right: 24px;
+}
+.introduction .container .i-text h2 {
+  font-size: 64px;
+  line-height: 96px;
+  margin-bottom: 36px;
+}
+.introduction .container .i-text p {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 32px;
+}
+.introduction .container .i-text img {
+  margin-right: 16px;
+}
+.introduction .container .i-img {
+  display: flex;
+}
+.introduction .container .i-img img {
+  margin-right: 24px;
+}
+.introduction .container .i-img img:last-child {
+  margin-right: 0px;
+}
+
+.about .container {
+  width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 160px 0px;
+}
+.about .container ul {
+  display: flex;
+  width: 636px;
+  margin-bottom: 24px;
+}
+.about .container ul:last-child {
+  margin-bottom: 0px;
+}
+.about .container ul li {
+  border: 1px solid #E3E3E3;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  margin-right: 24px;
+  width: 50%;
+}
+.about .container ul li h6 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 4px;
+}
+.about .about-me {
+  margin-left: 134px;
+}
+.about .about-me h2 {
+  font-size: 64px;
+  line-height: 96px;
+  margin-bottom: 36px;
+}
+.about .about-me p {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.contact {
+  background-image: linear-gradient(to top, #050014, rgba(1, 2, 30, 0.8901960784));
+}
+.contact .container {
+  width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  padding: 96px 0px;
+}
+.contact .container .c-text {
+  font-size: 64px;
+  line-height: 96px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-right: 113px;
+}
+.contact .container .c-text h2 {
+  margin-right: 16px;
+}
+.contact .container .c-text img {
+  vertical-align: middle;
+}
+.contact .container .c-img {
+  display: flex;
+}
+.contact .container .c-img img {
+  margin-right: 20px;
+}
+.contact .container .c-img img:last-child {
+  margin-right: 0px;
+}
+
+.shadow {
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
+  border-radius: 45px;
+}
+
+.project .container {
+  width: 1296px;
+  margin: 0 auto;
+  padding: 160px 0px;
+}
+.project .container h2 {
+  width: 746px;
+  margin-left: auto;
+  font-size: 64px;
+  line-height: 96px;
+  text-align: start;
+  margin-bottom: 16px;
+}
+.project .container .p-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-right {
+  width: 856px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.p-right .p-top {
+  display: flex;
+  justify-content: space-between;
+}
+.p-right .p-top .p-text {
+  width: 636px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.p-right .p-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-btn {
+  padding: 12px 24px;
+  display: inline-block;
+  background-color: black;
+  border-radius: 32px;
+}
+.p-btn a {
+  color: white;
+  text-decoration: none;
+}
+.p-btn img {
+  vertical-align: middle;
+}
+
+.copy-right {
+  padding: 40px 0px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}/*# sourceMappingURL=all.css.map */
