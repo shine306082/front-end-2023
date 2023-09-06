@@ -1,0 +1,24 @@
+body{
+    font-family: 'Roboto','Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    vertical-align: middle;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1296px;
+    // padding: 0px 12px;
+    margin: 0 auto;
+}
+

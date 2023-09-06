@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400&family=Roboto&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  vertical-align: middle;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  background-color: #AA0601;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 12px;
+}
+.header .container .logo {
+  padding: 16px 0px;
+}
+.header .container .logo a {
+  width: 80px;
+  height: 48.57px;
+  display: block;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.header .container .header-list ul {
+  display: flex;
+}
+.header .container .header-list ul li {
+  margin-left: 64px;
+}
+.header .container .header-list ul li:first-child {
+  margin-left: 0px;
+}
+
+@media (max-width: 769px) {
+  .container {
+    flex-direction: column;
+    align-items: start;
+  }
+  .container .header-list ul {
+    flex-wrap: wrap;
+  }
+  .container .header-list ul li {
+    width: 50%;
+    text-align: center;
+    border: 1px solid white;
+    padding: 12px 0px;
+    margin-left: 0px;
+  }
+}
+.footer {
+  background-color: #AA0601;
+}
+.footer .container {
+  padding: 0px 12px;
+}
+.footer .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0px;
+}
+.footer .list ul {
+  display: flex;
+}
+.footer .list ul li {
+  margin-right: 48px;
+}
+.footer .list ul li:last-child {
+  margin-right: 0px;
+}
+.footer .list img {
+  width: 48px;
+  margin-left: 32px;
+}
+.footer .list img:first-child {
+  margin-left: 0px;
+}
+
+.contact {
+  margin-bottom: 32px;
+}
+.contact .phone, .contact .e-mail {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 36px;
+  font-family: "Noto Sans TC";
+  margin-bottom: 28px;
+}
+.contact .phone span, .contact .e-mail span {
+  font-size: 48px;
+  margin-right: 16px;
+}
+
+@media (max-width: 769px) {
+  .list .footer-list {
+    display: none;
+  }
+  .list img {
+    width: 24px;
+    margin-left: 8px;
+  }
+  .contact .phone, .contact .e-mail {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .contact .phone span, .contact .e-mail span {
+    font-size: 24px;
+    margin-right: 12px;
+  }
+}
+.copy-right {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 32px 0px;
+}
+.copy-right ul {
+  display: flex;
+}
+.copy-right ul li {
+  margin-left: 48px;
+  font-size: 14px;
+}
+.copy-right ul li:first-child {
+  margin-left: 0px;
+}
+
+@media (max-width: 769px) {
+  .copy-right {
+    flex-direction: column;
+    padding: 24px 0px;
+  }
+  .copy-right p {
+    margin-bottom: 8px;
+  }
+  .copy-right ul {
+    flex-direction: column;
+  }
+  .copy-right ul li {
+    margin-left: 0px;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .copy-right ul li:last-child {
+    margin-bottom: 0px;
+  }
+}/*# sourceMappingURL=all.css.map */
