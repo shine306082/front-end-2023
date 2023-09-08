@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400&family=Roboto&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0px 12px;
+  margin: 0 auto;
+}
+@media (max-width: 769px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 376px) {
+  .container {
+    max-width: 360px;
+  }
+}
+
+.bg-primary {
+  background-color: #AA0601;
+}
+
+.nav {
+  padding: 16px 0px;
+}
+@media (max-width: 376px) {
+  .nav {
+    padding: 0px;
+  }
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 376px) {
+  .nav-flex {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0px;
+    max-width: 100%;
+  }
+}
+
+.logo {
+  width: 80px;
+  height: 48.57px;
+  display: block;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media (max-width: 376px) {
+  .logo {
+    margin: 16px 0px 16px 16px;
+  }
+}
+
+.nav-list {
+  display: flex;
+}
+@media (max-width: 376px) {
+  .nav-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 376px) {
+  .nav-item {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.nav-link {
+  display: block;
+  font-size: 20px;
+  padding: 8px 32px;
+}
+.nav-link:hover {
+  opacity: 60%;
+}
+@media (max-width: 376px) {
+  .nav-link {
+    padding: 12px 0px;
+    font-size: 16px;
+    border: 1px solid white;
+  }
+}
+
+.nav-item:last-child .nav-link {
+  padding-right: 0px;
+}
+
+.footer {
+  padding: 48px 0px 32px 0px;
+}
+@media (max-width: 376px) {
+  .footer {
+    padding: 24px 0px;
+  }
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+@media (max-width: 376px) {
+  .footer-flex {
+    margin-bottom: 24px;
+  }
+}
+
+.footer-info {
+  padding-top: 8px;
+}
+@media (max-width: 376px) {
+  .footer-info {
+    padding-top: 0px;
+  }
+}
+
+.footer-list {
+  display: flex;
+  margin-bottom: 24px;
+}
+@media (max-width: 376px) {
+  .footer-list {
+    display: none;
+  }
+}
+
+.footer-link {
+  display: block;
+  padding: 0px 24px;
+}
+.footer-link:hover {
+  opacity: 60%;
+}
+
+.footer-item:first-child .footer-link {
+  padding-left: 0px;
+}
+
+.contact-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.contact-flex:last-child {
+  margin-bottom: 0px;
+}
+
+.contact-flex span {
+  color: white;
+  font-size: 48px;
+  margin-right: 16px;
+}
+@media (max-width: 376px) {
+  .contact-flex span {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+}
+
+.contact-link {
+  font-size: 36px;
+  font-family: "Noto Sans TC";
+}
+@media (max-width: 376px) {
+  .contact-link {
+    font-size: 16px;
+  }
+}
+
+.social-link {
+  padding: 0px 16px;
+}
+@media (max-width: 769px) {
+  .social-link {
+    padding: 0px 8px;
+  }
+}
+@media (max-width: 376px) {
+  .social-link {
+    padding: 0px 4px;
+  }
+}
+
+.social-link:last-child {
+  padding-right: 0px;
+}
+
+.social-link img {
+  max-width: 48px;
+}
+@media (max-width: 769px) {
+  .social-link img {
+    max-width: 40px;
+  }
+}
+@media (max-width: 376px) {
+  .social-link img {
+    max-width: 24px;
+  }
+}
+
+.copy-right {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-top: 32px;
+}
+@media (max-width: 376px) {
+  .copy-right {
+    flex-direction: column;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 376px) {
+  .copy-right p {
+    margin-bottom: 4px;
+  }
+}
+
+.privacy-list {
+  display: flex;
+}
+@media (max-width: 376px) {
+  .privacy-list {
+    flex-direction: column;
+  }
+}
+
+.privacy-link {
+  display: block;
+  padding: 0px 24px;
+  font-size: 14px;
+}
+@media (max-width: 376px) {
+  .privacy-link {
+    font-size: 16px;
+    padding: 4px 0px;
+  }
+}
+
+.privacy-item:last-child .privacy-link {
+  padding-right: 0px;
+}
+@media (max-width: 376px) {
+  .privacy-item:last-child .privacy-link {
+    padding-bottom: 0px;
+  }
+}/*# sourceMappingURL=all.css.map */

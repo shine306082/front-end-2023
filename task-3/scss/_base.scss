@@ -1,0 +1,33 @@
+body{
+    font-family: 'Roboto','Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1320px;
+    padding: 0px 12px;
+    margin: 0 auto;
+    // 平板
+    @include pad{
+        max-width: 720px;
+    }
+    // 手機
+    @include mobile{
+        max-width: 360px;
+    }
+}
+
